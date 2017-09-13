@@ -163,6 +163,10 @@ ul {
   display: none;
 }
 
+.project-img {
+  max-width: calc((100% - 5%)/2);
+}
+
 img {
   padding: 10px;
 }
