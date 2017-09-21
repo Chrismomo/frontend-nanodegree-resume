@@ -60,7 +60,11 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       </ul>
     </div>
   </div>
-
+    <script>
+      var map;
+      function initMap() {
+      }
+    </script>
 
   <!-- "HTML is loaded by the browser in the order it appears in the file. If the JavaScript is loaded first and it is supposed to affect the HTML below it, it might not work, as the JavaScript would be loaded before the HTML it is supposed to work on. Therefore, putting JavaScript near the bottom of the HTML page is often the best strategy."
   https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics -->
@@ -84,14 +88,13 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCljcTpfUCHXcBf1Eu0i6VjcYwKIFH6raY&callback=initMap&libraries=places" async defer></script>
   <!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
   <script src="js/resumeBuilder.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCICr4HNhJ9jTIs3aq9FS5b-nJrUxo8sU&callback=initMap"></script> 
 
 
   <!--
@@ -101,6 +104,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   of the resume, then that part of the resume does not show up. More on this in the
   course.
   -->
+
 
   <script>
     // Notice how all of a sudden there's JavaScript inside this HTML
